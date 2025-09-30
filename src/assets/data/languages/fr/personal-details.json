@@ -1,0 +1,99 @@
+{
+  "personalInfo": {
+    "name": "OM Jadhav",
+    "title": "Développeur Full Stack",
+    "subtitle": "Développeur Passionné & Résolveur de Problèmes",
+    "description": "Je suis un développeur passionné avec une expertise dans les technologies web modernes. J'aime créer des applications belles, fonctionnelles et conviviales qui résolvent des problèmes réels.",
+    "email": "om.jadhav.dev@gmail.com",
+    "phone": "+916266836548",
+    "location": "Hyderabad, Telangana",
+    "profileImage": "assets/images/profilephoto.jpg",
+    "resumeUrl": "assets/files/OM_Jadhav_Resume.pdf"
+  },
+  "stats": [
+    {
+      "number": "1+",
+      "label": "Années d'Expérience"
+    },
+    {
+      "number": "20+",
+      "label": "Projets Terminés"
+    },
+    {
+      "number": "5+",
+      "label": "Clients Satisfaits"
+    },
+    {
+      "number": "10+",
+      "label": "Technologies Maîtrisées"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Développement Full Stack",
+      "description": "Expert en technologies web modernes avec plus d'1 an d'expérience",
+      "icon": "fas fa-code",
+      "color": "#4CAF50"
+    },
+    {
+      "title": "Résolveur de Problèmes",
+      "description": "Passionné par la création de solutions efficaces et évolutives",
+      "icon": "fas fa-lightbulb",
+      "color": "#FF9800"
+    },
+    {
+      "title": "Apprenant Continu",
+      "description": "Toujours en train d'explorer de nouvelles technologies et meilleures pratiques",
+      "icon": "fas fa-graduation-cap",
+      "color": "#2196F3"
+    },
+    {
+      "title": "Joueur d'Équipe",
+      "description": "Approche collaborative avec d'excellentes compétences en communication",
+      "icon": "fas fa-users",
+      "color": "#9C27B0"
+    }
+  ],
+  "bio": {
+    "short": "Développeur Full Stack passionné avec expertise dans les technologies web modernes",
+    "long": "Je suis un Développeur Full Stack passionné avec plus d'1 an d'expérience dans la création d'applications web modernes et évolutives. Je me spécialise dans Angular, .NET Core, et les technologies cloud, avec un fort accent sur l'expérience utilisateur et l'optimisation des performances. J'aime résoudre des problèmes complexes et transformer les idées en réalité grâce à un code propre et efficace.",
+    "passions": [
+      "Développement Web",
+      "Résolution de Problèmes",
+      "Apprentissage de Nouvelles Technologies",
+      "Collaboration en Équipe"
+    ],
+    "goals": [
+      "Construire des applications web innovantes",
+      "Contribuer aux projets open source",
+      "Mentorer les développeurs juniors",
+      "Rester à jour avec les dernières technologies"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Développeur Full Stack",
+      "company": "Freelance",
+      "period": "2023 - Présent",
+      "description": "Développement d'applications web full-stack utilisant Angular, .NET Core, et les technologies cloud modernes",
+      "technologies": ["Angular", ".NET Core", "SQL Server", "Azure"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology",
+      "field": "Informatique",
+      "institution": "Nom de l'Université",
+      "year": "2023",
+      "description": "Spécialisé en développement logiciel et technologies web"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
+      "year": "2023",
+      "description": "Fondamentaux du cloud computing et services Azure"
+    }
+  ]
+}

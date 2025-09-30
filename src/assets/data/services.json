@@ -1,0 +1,76 @@
+{
+  "services": [
+    {
+      "title": "Web Development",
+      "description": "Custom web applications using modern frameworks like Angular, React, and .NET Core",
+      "icon": "fas fa-laptop-code",
+      "features": ["Responsive Design", "Performance Optimization", "SEO Friendly", "Cross-browser Compatibility"],
+      "pricing": "Starting from ₹25,000",
+      "delivery": "2-4 weeks",
+      "technologies": ["Angular", "React", ".NET Core", "Node.js"]
+    },
+   
+    {
+      "title": "UI/UX Design",
+      "description": "Beautiful and intuitive user interfaces that provide exceptional user experiences",
+      "icon": "fas fa-palette",
+      "features": ["User Research", "Wireframing", "Prototyping", "Design Systems"],
+      "pricing": "Starting from ₹15,000",
+      "delivery": "1-3 weeks",
+      "technologies": ["Figma", "Adobe XD", "Sketch", "Principle"]
+    }
+    
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Johnson",
+      "position": "Product Manager",
+      "company": "Tech Corp",
+      "content": "OM delivered an exceptional e-commerce platform that exceeded our expectations. His attention to detail and technical expertise are outstanding.",
+      "rating": 5,
+      "image": "assets/images/testimonials/sarah.jpg"
+    },
+    {
+      "name": "Mike Chen",
+      "position": "Startup Founder",
+      "company": "InnovateLab",
+      "content": "Working with OM was a game-changer for our startup. He built our MVP quickly and efficiently, helping us launch on time.",
+      "rating": 5,
+      "image": "assets/images/testimonials/mike.jpg"
+    },
+    {
+      "name": "Emily Davis",
+      "position": "Design Director",
+      "company": "Creative Studio",
+      "content": "OM's frontend development skills are remarkable. He brought our designs to life with pixel-perfect implementation.",
+      "rating": 5,
+      "image": "assets/images/testimonials/emily.jpg"
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": 1,
+      "title": "Building Scalable Angular Applications",
+      "excerpt": "Learn best practices for creating maintainable and scalable Angular applications.",
+      "content": "Full blog post content here...",
+      "author": "OM Jadhav",
+      "date": "2024-01-15",
+      "category": "Angular",
+      "tags": ["Angular", "TypeScript", "Best Practices"],
+      "image": "assets/images/blog/angular-scalable.jpg",
+      "readTime": "5 min read"
+    },
+    {
+      "id": 2,
+      "title": "Introduction to Three.js for Web Developers",
+      "excerpt": "Get started with 3D graphics in the browser using Three.js library.",
+      "content": "Full blog post content here...",
+      "author": "OM Jadhav",
+      "date": "2024-01-10",
+      "category": "Web Development",
+      "tags": ["Three.js", "3D Graphics", "WebGL"],
+      "image": "assets/images/blog/threejs-intro.jpg",
+      "readTime": "8 min read"
+    }
+  ]
+}

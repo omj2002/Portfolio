@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailJS Verification</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <h1>EmailJS Credentials Verification</h1>
+    <div id="results"></div>
+    
+    <script>
+        // Your current credentials
+        const SERVICE_ID = 'service_8rrjq8q';
+        const TEMPLATE_ID = '__ejs-test-mail-service__';
+        const PUBLIC_KEY = 'dcoz1xPcHsp6Jl8rDh';
+        
+        const resultsDiv = document.getElementById('results');
+        
+        function log(message, isError = false) {
+            const div = document.createElement('div');
+            div.style.color = isError ? 'red' : 'green';
+            div.style.margin = '5px 0';
+            div.innerHTML = message;
+            resultsDiv.appendChild(div);
+        }
+        
+        async function verifyEmailJS() {
+            log('🔍 Starting EmailJS verification...');
+            
+            try {
+                // Initialize EmailJS
+                log('📝 Initializing EmailJS with Public Key: ' + PUBLIC_KEY);
+                emailjs.init(PUBLIC_KEY);
+                log('✅ EmailJS initialized successfully');
+                
+                // Test template parameters
+                const templateParams = {
+                    from_name: 'Test User',
+                    from_email: 'test@example.com',
+                    subject: 'Test Subject',
+                    message: 'This is a test message',
+                    to_email: 'om.jadhav.dev@gmail.com',
+                    reply_to: 'test@example.com'
+                };
+                
+                log('📧 Attempting to send test email...');
+                log('Service ID: ' + SERVICE_ID);
+                log('Template ID: ' + TEMPLATE_ID);
+                
+                const response = await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams);
+                
+                log('🎉 SUCCESS! Email sent successfully');
+                log('Response: ' + JSON.stringify(response));
+                
+            } catch (error) {
+                log('❌ ERROR: ' + error.text || error.message, true);
+                
+                if (error.text && error.text.includes('Public Key is invalid')) {
+                    log('🔧 SOLUTION: Your Public Key is invalid. Please:', true);
+                    log('1. Go to https://dashboard.emailjs.com/admin/account', true);
+                    log('2. Find your correct Public Key in the API Keys section', true);
+                    log('3. Copy the full Public Key (it should be longer)', true);
+                    log('4. Update your email.service.ts file', true);
+                }
+                
+                if (error.text && error.text.includes('Service ID')) {
+                    log('🔧 SOLUTION: Check your Service ID in EmailJS dashboard', true);
+                }
+                
+                if (error.text && error.text.includes('Template ID')) {
+                    log('🔧 SOLUTION: Check your Template ID in EmailJS dashboard', true);
+                }
+            }
+        }
+        
+        // Run verification when page loads
+        verifyEmailJS();
+    </script>
+</body>
+</html>

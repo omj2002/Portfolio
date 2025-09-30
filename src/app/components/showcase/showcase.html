@@ -1,0 +1,142 @@
+<section id="showcase" class="showcase-section">
+<div class="showcase-container">
+
+  <!-- Simple Experience Section -->
+  <div class="simple-experience-section">
+    <div class="container">
+      <div class="experience-layout">
+        <!-- Profile Photo -->
+        <div class="profile-section">
+          <div class="profile-photo-container">
+            <img [src]="(personalDetails$ | async)?.personalInfo?.profileImage || 'assets/images/profilephoto.jpg'" 
+                 [alt]="(personalDetails$ | async)?.personalInfo?.name || 'OM Jadhav - Full Stack Developer'" 
+                 class="profile-photo">
+            <div class="photo-overlay">
+              <div class="photo-badge">
+                <i class="fas fa-code"></i>
+                <span *ngIf="translations$ | async as translations">{{ translations.showcase.developer || 'Developer' }}</span>
+                <span *ngIf="!(translations$ | async)">Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Details -->
+        <div class="experience-section">
+          <div class="experience-card">
+            <h3 class="company-name">Cincyr Tech</h3>
+            <p class="position">Frontend Developer</p>
+            <p class="project-info">Worked on HiveProp - Real Estate Platform</p>
+            <p class="experience-description">
+              Developed responsive user interfaces and integrated with backend APIs for a comprehensive real estate platform.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Achievements Section -->
+      <div class="achievements-section">
+        <div class="container">
+          <h2 class="section-title" *ngIf="translations$ | async as translations">{{ translations.showcase.achievements }}</h2>
+          <h2 class="section-title" *ngIf="!(translations$ | async)">My Achievements</h2>
+      <div class="achievements-grid">
+        <!-- Use multilingual achievements if available -->
+        <div class="achievement-card" *ngFor="let achievement of (personalDetails$ | async)?.achievements || achievements; let i = index">
+          <div class="achievement-icon" [style.background-color]="achievement.color">
+            <i [class]="achievement.icon"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>{{ achievement.title }}</h3>
+            <p>{{ achievement.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Skills Section -->
+      <div class="skills-section">
+        <div class="container">
+          <h2 class="section-title" *ngIf="translations$ | async as translations">{{ translations.showcase.technicalSkills }}</h2>
+          <h2 class="section-title" *ngIf="!(translations$ | async)">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item" *ngFor="let skill of skills">
+          <div class="skill-header">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-percentage">{{ skill.level }}%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" 
+                 [style.width.%]="skill.level" 
+                 [style.background-color]="skill.color">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Featured Projects Section -->
+      <div class="projects-section">
+        <div class="container">
+          <h2 class="section-title" *ngIf="translations$ | async as translations">{{ translations.showcase.featuredProjects }}</h2>
+          <h2 class="section-title" *ngIf="!(translations$ | async)">Featured Projects</h2>
+      <div class="projects-grid" *ngIf="featuredProjects$ | async as projects">
+        <div class="project-card" *ngFor="let project of projects">
+          <div class="project-image">
+            <img [src]="project.image" [alt]="project.title">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a [href]="project.liveUrl" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a [href]="project.githubUrl" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+            <div class="project-technologies">
+              <span class="tech-tag" *ngFor="let tech of project.technologies">
+                {{ tech }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action Section -->
+  <div class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 *ngIf="translations$ | async as translations">{{ translations.showcase.readyToWork }}</h2>
+        <h2 *ngIf="!(translations$ | async)">Ready to Work Together?</h2>
+        <p *ngIf="translations$ | async as translations">{{ translations.showcase.createSomething }}</p>
+        <p *ngIf="!(translations$ | async)">Let's create something amazing together. I'm always excited to work on new projects and challenges.</p>
+        <div class="cta-buttons">
+          <a href="#contact" (click)="scrollToSection('contact'); $event.preventDefault()" class="btn btn-primary">
+            <i class="fas fa-envelope"></i>
+            <span *ngIf="translations$ | async as translations">{{ translations.about.getInTouch }}</span>
+            <span *ngIf="!(translations$ | async)">Get In Touch</span>
+          </a>
+          <button class="btn btn-secondary" (click)="downloadResume()">
+            <i class="fas fa-download"></i>
+            <span *ngIf="translations$ | async as translations">{{ translations.contact.resume }}</span>
+            <span *ngIf="!(translations$ | async)">Download Resume</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

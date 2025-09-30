@@ -1,0 +1,141 @@
+{
+  "skills": {
+    "frontend": [
+      {
+        "name": "Angular",
+        "icon": "fab fa-angular",
+        "level": 95
+      },
+      {
+        "name": "React",
+        "icon": "fab fa-react",
+        "level": 90
+      },
+      {
+        "name": "TypeScript",
+        "icon": "fab fa-js-square",
+        "level": 95
+      },
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js",
+        "level": 90
+      },
+      {
+        "name": "HTML5",
+        "icon": "fab fa-html5",
+        "level": 95
+      },
+      {
+        "name": "CSS3",
+        "icon": "fab fa-css3-alt",
+        "level": 90
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "fab fa-tailwindcss",
+        "level": 90
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "fab fa-bootstrap",
+        "level": 90
+      },
+      {
+        "name": "Sass/SCSS",
+        "icon": "fab fa-sass",
+        "level": 85
+      }
+    ],
+    "backend": [
+      {
+        "name": "C#",
+        "icon": "fab fa-csharp",
+        "level": 90
+      },
+      {
+        "name": "Asp.net Core",
+        "icon": "fab fa-dotnet",
+        "level": 85
+      },
+      {
+        "name": "Asp.Net MVC Core",
+        "icon": "fab fa-dotnet",
+        "level": 80
+      },
+      {
+        "name": "Restful API",
+        "icon": "fas fa-server",
+        "level": 90
+      },
+      {
+        "name": "Web Api",
+        "icon": "fab fa-dotnet",
+        "level": 80
+      },
+      {
+        "name": "Web Api",
+        "icon": "fab fa-dotnet",
+        "level": 75
+      }
+    ],
+    "database": [
+      {
+        "name": "MS SQL Server",
+        "icon": "fas fa-database",
+        "level": 90
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database",
+        "level": 85
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database",
+        "level": 80
+      },
+      {
+        "name": "Redis",
+        "icon": "fas fa-database",
+        "level": 75
+      }
+    ],
+    "tools": [
+      {
+        "name": "Git",
+        "icon": "fab fa-git-alt",
+        "level": 95
+      },
+      {
+        "name": "Docker",
+        "icon": "fab fa-docker",
+        "level": 85
+      },
+      {
+        "name": "AWS",
+        "icon": "fab fa-aws",
+        "level": 80
+      },
+      {
+        "name": "Figma",
+        "icon": "fab fa-figma",
+        "level": 85
+      },
+      {
+        "name": "VS Code",
+        "icon": "fas fa-code",
+        "level": 95
+      },
+      {
+        "name": "Webpack",
+        "icon": "fas fa-cube",
+        "level": 80
+      }
+    ]
+  },
+  "showcaseSkills": [
+    "Angular", "React", "TypeScript", "JavaScript", "Node.js", 
+    "Python", "MongoDB", "PostgreSQL", "AWS", "Docker"
+  ]
+}

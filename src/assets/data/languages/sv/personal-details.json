@@ -1,0 +1,99 @@
+{
+  "personalInfo": {
+    "name": "OM Jadhav",
+    "title": "Fullstack-utvecklare",
+    "subtitle": "Passionerad Utvecklare & Problemlösare",
+    "description": "Jag är en passionerad utvecklare med expertis inom moderna webbteknologier. Jag älskar att skapa vackra, funktionella och användarvänliga applikationer som löser verkliga problem.",
+    "email": "om.jadhav.dev@gmail.com",
+    "phone": "+916266836548",
+    "location": "Hyderabad, Telangana",
+    "profileImage": "assets/images/profilephoto.jpg",
+    "resumeUrl": "assets/files/OM_Jadhav_Resume.pdf"
+  },
+  "stats": [
+    {
+      "number": "1+",
+      "label": "Års Erfarenhet"
+    },
+    {
+      "number": "20+",
+      "label": "Slutförda Projekt"
+    },
+    {
+      "number": "5+",
+      "label": "Nöjda Klienter"
+    },
+    {
+      "number": "10+",
+      "label": "Behärskade Teknologier"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Fullstack-utveckling",
+      "description": "Expert inom moderna webbteknologier med över 1 års erfarenhet",
+      "icon": "fas fa-code",
+      "color": "#4CAF50"
+    },
+    {
+      "title": "Problemlösare",
+      "description": "Passionerad om att skapa effektiva och skalbara lösningar",
+      "icon": "fas fa-lightbulb",
+      "color": "#FF9800"
+    },
+    {
+      "title": "Kontinuerlig Inlärning",
+      "description": "Utforskar alltid nya teknologier och bästa praxis",
+      "icon": "fas fa-graduation-cap",
+      "color": "#2196F3"
+    },
+    {
+      "title": "Lagspelare",
+      "description": "Samarbetsorienterad approach med utmärkta kommunikationsfärdigheter",
+      "icon": "fas fa-users",
+      "color": "#9C27B0"
+    }
+  ],
+  "bio": {
+    "short": "Passionerad fullstack-utvecklare med expertis inom moderna webbteknologier",
+    "long": "Jag är en passionerad fullstack-utvecklare med över 1 års erfarenhet av att skapa moderna, skalbara webbapplikationer. Jag specialiserar mig på Angular, .NET Core och molnteknologier med starkt fokus på användarupplevelse och prestandaoptimering. Jag älskar att lösa komplexa problem och förvandla idéer till verklighet genom ren, effektiv kod.",
+    "passions": [
+      "Webbutveckling",
+      "Problemlösning",
+      "Lära sig nya teknologier",
+      "Teamarbete"
+    ],
+    "goals": [
+      "Bygga innovativa webbapplikationer",
+      "Bidra till open source-projekt",
+      "Mentora juniorutvecklare",
+      "Hålla sig uppdaterad med senaste teknologier"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Fullstack-utvecklare",
+      "company": "Frilans",
+      "period": "2023 - Nuvarande",
+      "description": "Utveckling av fullstack webbapplikationer med Angular, .NET Core och moderna molnteknologier",
+      "technologies": ["Angular", ".NET Core", "SQL Server", "Azure"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology",
+      "field": "Datavetenskap",
+      "institution": "Universitetsnamn",
+      "year": "2023",
+      "description": "Specialiserad på mjukvaruutveckling och webbteknologier"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
+      "year": "2023",
+      "description": "Molncomputing-grunder och Azure-tjänster"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a (click)="scrollToSection('about'); $event.preventDefault()" class="logo-link">
+        <img src="assets/images/logo-icon.svg" alt="OM Jadhav Logo" class="logo-icon">
+        <span class="logo-text">OM Jadhav</span>
+      </a>
+    </div>
+    
+    <div class="nav-menu" [class.active]="isMenuOpen">
+      <a *ngFor="let navItem of navigation$ | async" 
+         (click)="scrollToSection(navItem.path.replace('#', '')); closeMenu(); $event.preventDefault()" 
+         class="nav-link">
+        <i [class]="navItem.icon"></i>
+        <span>{{ navItem.label }}</span>
+      </a>
+      
+      <!-- Mobile Actions -->
+      <div class="nav-actions">
+        <div class="theme-selector">
+          <button class="theme-btn" (click)="toggleThemeMenu()" [title]="(currentThemeConfig$ | async)?.description">
+            <i [class]="(currentThemeConfig$ | async)?.icon || 'fas fa-moon'"></i>
+            <span>{{ (currentThemeConfig$ | async)?.name || 'Dark' }}</span>
+            <i class="fas fa-chevron-down" [class.rotated]="isThemeMenuOpen"></i>
+          </button>
+          <div class="theme-dropdown" [class.active]="isThemeMenuOpen">
+            <button *ngFor="let theme of themes$ | async" 
+                    (click)="changeTheme(theme.mode)" 
+                    [class.active]="(currentTheme$ | async) === theme.mode"
+                    [title]="theme.description">
+              <i [class]="theme.icon"></i>
+              {{ theme.name }}
+            </button>
+          </div>
+        </div>
+
+        <div class="language-selector">
+          <button class="language-btn" (click)="toggleLanguageMenu()">
+            <i class="fas fa-globe"></i>
+            <span>{{ currentLanguage }}</span>
+            <i class="fas fa-chevron-down" [class.rotated]="isLanguageMenuOpen"></i>
+          </button>
+          <div class="language-dropdown" [class.active]="isLanguageMenuOpen">
+            <button *ngFor="let language of availableLanguages$ | async" 
+                    (click)="changeLanguage(language.code)" 
+                    [class.active]="currentLanguage === language.code">
+              <span class="flag">{{ language.flag }}</span>
+              {{ language.name }}
+            </button>
+          </div>
+        </div>
+
+        <button class="resume-btn" (click)="downloadResume()">
+          <i class="fas fa-download"></i>
+          <span *ngIf="translations$ | async as translations">{{ translations.common.resume }}</span>
+          <span *ngIf="!(translations$ | async)">Resume</span>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="nav-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</nav>

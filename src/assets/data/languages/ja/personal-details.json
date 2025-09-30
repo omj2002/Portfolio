@@ -1,0 +1,99 @@
+{
+  "personalInfo": {
+    "name": "OM Jadhav",
+    "title": "フルスタック開発者",
+    "subtitle": "情熱的な開発者＆問題解決者",
+    "description": "モダンなWeb技術に精通した情熱的な開発者です。実際の問題を解決する美しく、機能的で使いやすいアプリケーションを作成することが大好きです。",
+    "email": "om.jadhav.dev@gmail.com",
+    "phone": "+916266836548",
+    "location": "Hyderabad, Telangana",
+    "profileImage": "assets/images/profilephoto.jpg",
+    "resumeUrl": "assets/files/OM_Jadhav_Resume.pdf"
+  },
+  "stats": [
+    {
+      "number": "1+",
+      "label": "年の経験"
+    },
+    {
+      "number": "20+",
+      "label": "完了プロジェクト"
+    },
+    {
+      "number": "5+",
+      "label": "満足したクライアント"
+    },
+    {
+      "number": "10+",
+      "label": "習得技術"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "フルスタック開発",
+      "description": "1年以上の経験を持つモダンなWeb技術の専門家",
+      "icon": "fas fa-code",
+      "color": "#4CAF50"
+    },
+    {
+      "title": "問題解決者",
+      "description": "効率的でスケーラブルなソリューションの作成に情熱的",
+      "icon": "fas fa-lightbulb",
+      "color": "#FF9800"
+    },
+    {
+      "title": "継続学習者",
+      "description": "常に新しい技術とベストプラクティスを探求",
+      "icon": "fas fa-graduation-cap",
+      "color": "#2196F3"
+    },
+    {
+      "title": "チームプレイヤー",
+      "description": "優れたコミュニケーションスキルを持つ協調的アプローチ",
+      "icon": "fas fa-users",
+      "color": "#9C27B0"
+    }
+  ],
+  "bio": {
+    "short": "モダンなWeb技術に精通した情熱的なフルスタック開発者",
+    "long": "私は1年以上の経験を持つ情熱的なフルスタック開発者で、モダンでスケーラブルなWebアプリケーションの作成に従事しています。Angular、.NET Core、クラウド技術を専門とし、ユーザーエクスペリエンスとパフォーマンス最適化に強い焦点を当てています。複雑な問題を解決し、クリーンで効率的なコードを通じてアイデアを現実に変えることが大好きです。",
+    "passions": [
+      "Web開発",
+      "問題解決",
+      "新技術の学習",
+      "チーム協力"
+    ],
+    "goals": [
+      "革新的なWebアプリケーションの構築",
+      "オープンソースプロジェクトへの貢献",
+      "ジュニア開発者のメンタリング",
+      "最新技術の習得"
+    ]
+  },
+  "experience": [
+    {
+      "title": "フルスタック開発者",
+      "company": "フリーランス",
+      "period": "2023 - 現在",
+      "description": "Angular、.NET Core、モダンなクラウド技術を使用したフルスタックWebアプリケーションの開発",
+      "technologies": ["Angular", ".NET Core", "SQL Server", "Azure"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology",
+      "field": "コンピュータサイエンス",
+      "institution": "大学名",
+      "year": "2023",
+      "description": "ソフトウェア開発とWeb技術に特化"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
+      "year": "2023",
+      "description": "クラウドコンピューティングの基礎とAzureサービス"
+    }
+  ]
+}

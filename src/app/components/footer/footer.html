@@ -1,0 +1,111 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <a href="#" class="logo-link">
+            <img src="assets/images/logo-icon.svg" alt="OM Jadhav" class="logo-icon">
+            <span class="logo-text">OM Jadhav</span>
+          </a>
+        </div>
+            <p class="footer-description" *ngIf="translations$ | async as translations">{{ translations.footer.description }}</p>
+            <p class="footer-description" *ngIf="!(translations$ | async)">A passionate developer creating beautiful, functional, and user-friendly applications that solve real-world problems.</p>
+        <div class="social-links">
+          <a *ngFor="let social of socialLinks$ | async"
+             [href]="social.url"
+             target="_blank"
+             class="social-link"
+             [attr.aria-label]="social.name">
+            <i [class]="social.icon"></i>
+          </a>
+        </div>
+      </div>
+
+          <div class="footer-section">
+            <h3 *ngIf="translations$ | async as translations">{{ translations.footer.quickLinks }}</h3>
+            <h3 *ngIf="!(translations$ | async)">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#about" (click)="scrollToTop()">
+                <span *ngIf="translations$ | async as translations">{{ translations.navigation.about }}</span>
+                <span *ngIf="!(translations$ | async)">About</span>
+              </a></li>
+              <li><a href="#skills" (click)="scrollToTop()">
+                <span *ngIf="translations$ | async as translations">{{ translations.navigation.skills }}</span>
+                <span *ngIf="!(translations$ | async)">Skills</span>
+              </a></li>
+              <li><a href="#projects" (click)="scrollToTop()">
+                <span *ngIf="translations$ | async as translations">{{ translations.navigation.projects }}</span>
+                <span *ngIf="!(translations$ | async)">Projects</span>
+              </a></li>
+              <li><a href="#contact" (click)="scrollToTop()">
+                <span *ngIf="translations$ | async as translations">{{ translations.navigation.contact }}</span>
+                <span *ngIf="!(translations$ | async)">Contact</span>
+              </a></li>
+            </ul>
+          </div>
+
+      <div class="footer-section">
+        <h3 *ngIf="translations$ | async as translations">{{ translations.footer.services }}</h3>
+        <h3 *ngIf="!(translations$ | async)">Services</h3>
+        <ul class="footer-links">
+          <li><a href="#services" (click)="scrollToSection('services')">
+            <span *ngIf="translations$ | async as translations">{{ translations.footer.webDevelopment }}</span>
+            <span *ngIf="!(translations$ | async)">Web Development</span>
+          </a></li>
+          <li><a href="#services" (click)="scrollToSection('services')">
+            <span *ngIf="translations$ | async as translations">{{ translations.footer.mobileApps }}</span>
+            <span *ngIf="!(translations$ | async)">Mobile Apps</span>
+          </a></li>
+          <li><a href="#services" (click)="scrollToSection('services')">
+            <span *ngIf="translations$ | async as translations">{{ translations.footer.uiUx }}</span>
+            <span *ngIf="!(translations$ | async)">UI/UX Design</span>
+          </a></li>
+          <li><a href="#services" (click)="scrollToSection('services')">
+            <span *ngIf="translations$ | async as translations">{{ translations.footer.consulting }}</span>
+            <span *ngIf="!(translations$ | async)">Consulting</span>
+          </a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3 *ngIf="translations$ | async as translations">{{ translations.footer.contactInfo }}</h3>
+        <h3 *ngIf="!(translations$ | async)">Contact Info</h3>
+        <div class="contact-info" *ngIf="personalInfo$ | async as personalInfo">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>{{ personalInfo.email }}</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>{{ personalInfo.phone }}</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>{{ personalInfo.location }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p *ngIf="translations$ | async as translations">&copy; {{ currentYear }} Om Jadhav. {{ translations.footer.allRightsReserved }}</p>
+            <p *ngIf="!(translations$ | async)">&copy; {{ currentYear }} Om Jadhav. All rights reserved.</p>
+            <!-- <div class="footer-bottom-links">
+              <a href="#privacy">
+                <span *ngIf="translations$ | async as translations">{{ translations.footer.privacyPolicy }}</span>
+                <span *ngIf="!(translations$ | async)">Privacy Policy</span>
+              </a>
+              <a href="#terms">
+                <span *ngIf="translations$ | async as translations">{{ translations.footer.termsOfService }}</span>
+                <span *ngIf="!(translations$ | async)">Terms of Service</span>
+              </a>
+              <a href="#cookies">
+                <span *ngIf="translations$ | async as translations">{{ translations.footer.cookiePolicy }}</span>
+                <span *ngIf="!(translations$ | async)">Cookie Policy</span>
+              </a>
+            </div> -->
+          </div>
+        </div>
+  </div>
+</footer>

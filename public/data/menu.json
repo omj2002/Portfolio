@@ -1,0 +1,44 @@
+{
+  "navigation": [
+    {
+      "path": "#about",
+      "label": "About",
+      "icon": "fas fa-user",
+      "order": 1
+    },
+    {
+      "path": "#skills",
+      "label": "Skills",
+      "icon": "fas fa-cogs",
+      "order": 2
+    },
+    {
+      "path": "#showcase",
+      "label": "More Info",
+      "icon": "fas fa-info-circle",
+      "order": 3
+    },
+    {
+      "path": "#projects",
+      "label": "Projects",
+      "icon": "fas fa-briefcase",
+      "order": 4
+    },
+    {
+      "path": "#contact",
+      "label": "Contact",
+      "icon": "fas fa-envelope",
+      "order": 5
+    }
+  ],
+  "siteSettings": {
+    "title": "OM Jadhav - Full Stack Developer",
+    "description": "Portfolio of OM Jadhav, a passionate Full Stack Developer specializing in Angular, React, Node.js, and modern web technologies.",
+    "keywords": "OM Jadhav, Full Stack Developer, Angular, React, Node.js, Portfolio",
+    "author": "OM Jadhav",
+    "theme": "dark",
+    "language": "en",
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  }
+}

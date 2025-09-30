@@ -1,0 +1,57 @@
+{
+  "personalInfo": {
+    "name": "OM Jadhav",
+    "title": "Full Stack Developer",
+    "subtitle": "Passionate Developer & Problem Solver",
+    "description": "I'm a passionate developer with expertise in modern web technologies. I love creating beautiful, functional, and user-friendly applications that solve real-world problems.",
+    "email": "om.jadhav.dev@gmail.com",
+    "phone": "+916266836548",
+    "location": "Hyderabad, Telangana",
+    "profileImage": "assets/images/profilephoto.jpg",
+    "resumeUrl": "assets/files/OM_Jadhav_Resume.pdf"
+  },
+  "stats": [
+    {
+      "number": "1+",
+      "label": "Years Experience"
+    },
+    {
+      "number": "20+",
+      "label": "Projects Completed"
+    },
+    {
+      "number": "5+",
+      "label": "Happy Clients"
+    },
+    {
+      "number": "10+",
+      "label": "Technologies Mastered"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Full Stack Development",
+      "description": "Expert in modern web technologies with 1+ years of experience",
+      "icon": "fas fa-code",
+      "color": "#4CAF50"
+    },
+    {
+      "title": "Problem Solver",
+      "description": "Passionate about creating efficient and scalable solutions",
+      "icon": "fas fa-lightbulb",
+      "color": "#FF9800"
+    },
+    {
+      "title": "Continuous Learner",
+      "description": "Always exploring new technologies and best practices",
+      "icon": "fas fa-graduation-cap",
+      "color": "#2196F3"
+    },
+    {
+      "title": "Team Player",
+      "description": "Collaborative approach with excellent communication skills",
+      "icon": "fas fa-users",
+      "color": "#9C27B0"
+    }
+  ]
+}

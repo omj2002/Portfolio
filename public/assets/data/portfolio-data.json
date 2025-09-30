@@ -1,0 +1,271 @@
+{
+  "personalInfo": {
+    "name": "John Doe",
+    "title": "Full Stack Developer",
+    "subtitle": "Passionate Developer & Problem Solver",
+    "description": "I'm a passionate developer with expertise in modern web technologies. I love creating beautiful, functional, and user-friendly applications that solve real-world problems.",
+    "email": "om.jadhav.dev@gmail.com",
+    "phone": "+916266836548",
+    "location": "Hyderabad, Telangana",
+    "profileImage": "assets/images/profile.jpg",
+    "resumeUrl": "assets/files/John_Doe_Resume.pdf"
+  },
+  "stats": [
+    {
+      "number": "1+",
+      "label": "Years Experience"
+    },
+    {
+      "number": "10+",
+      "label": "Projects Completed"
+    },
+    {
+      "number": "5+",
+      "label": "Happy Clients"
+    }
+  ],
+  "skills": {
+    "frontend": [
+      {
+        "name": "HTML5",
+        "icon": "fab fa-angular",
+        "level": 90
+      },
+      {
+        "name": "CSS3",
+        "icon": "fab fa-react",
+        "level": 85
+      },
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-vue",
+        "level": 80
+      },
+      {
+        "name": "TypeScript",
+        "icon": "fab fa-js-square",
+        "level": 95
+      },
+      {
+        "name": "Angular",
+        "icon": "fas fa-code",
+        "level": 90
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "fab fa-html5",
+        "level": 95
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "fab fa-css3-alt",
+        "level": 90
+      },
+      {
+        "name": "Sass/SCSS",
+        "icon": "fab fa-sass",
+        "level": 85
+      }
+    ],
+    "backend": [
+      {
+        "name": "C#",
+        "icon": "fab fa-node-js",
+        "level": 90
+      },
+      {
+        "name": "Asp.net Core",
+        "icon": "fab fa-python",
+        "level": 85
+      },
+      {
+        "name": "Asp.Net MVC Core",
+        "icon": "fab fa-java",
+        "level": 80
+      },
+      {
+        "name": "Restful API",
+        "icon": "fas fa-server",
+        "level": 85
+      },
+      {
+        "name": "Web Api",
+        "icon": "fab fa-python",
+        "level": 75
+      }
+    ],
+    "database": [
+      {
+        "name": "MS SQL Server",
+        "icon": "fas fa-database",
+        "level": 85
+      },
+    
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database",
+        "level": 75
+      }
+    ],
+    "tools": [
+      {
+        "name": "Visual Studio",
+        "icon": "fab fa-git-alt",
+        "level": 90
+      },
+      {
+        "name": "Visual Studio Code",
+        "icon": "fab fa-docker",
+        "level": 80
+      },
+      {
+        "name": "Figma",
+        "icon": "fab fa-aws",
+        "level": 75
+      },
+      {
+        "name": "Git",
+        "icon": "fab fa-figma",
+        "level": 85
+      },
+      {
+        "name": "SQL Server Management Studio",
+        "icon": "fas fa-code",
+        "level": 95
+      },
+      {
+        "name": "Responsive Design",
+        "icon": "fas fa-mobile-alt",
+        "level": 90
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce solution built with Angular, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
+      "image": "assets/images/projects/ecommerce.jpg",
+      "technologies": ["Angular", "Node.js", "MongoDB", "Stripe", "Express.js"],
+      "liveUrl": "https://ecommerce-demo.com",
+      "githubUrl": "https://github.com/johndoe/ecommerce-platform",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      "image": "assets/images/projects/taskmanager.jpg",
+      "technologies": ["React", "Socket.io", "Express", "PostgreSQL", "Redux"],
+      "liveUrl": "https://taskmanager-demo.com",
+      "githubUrl": "https://github.com/johndoe/task-manager",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Analytics Dashboard",
+      "description": "A comprehensive analytics dashboard with data visualization, real-time metrics, and customizable reports for business intelligence.",
+      "image": "assets/images/projects/analytics.jpg",
+      "technologies": ["Vue.js", "D3.js", "Python", "Django", "Chart.js"],
+      "liveUrl": "https://analytics-demo.com",
+      "githubUrl": "https://github.com/omj2002/analytics-dashboard",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Blog Platform",
+      "description": "A modern blog platform with markdown support, comment system, and SEO optimization. Built with performance and user experience in mind.",
+      "image": "assets/images/projects/blog.jpg",
+      "technologies": ["Next.js", "TypeScript", "Prisma", "Vercel", "Tailwind CSS"],
+      "liveUrl": "https://blog-demo.com",
+      "githubUrl": "https://github.com/omj2002/blog-platform",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Weather App",
+      "description": "A responsive weather application with location-based forecasts, interactive maps, and real-time weather updates.",
+      "image": "assets/images/projects/weather.jpg",
+      "technologies": ["Angular", "OpenWeather API", "Leaflet", "SCSS"],
+      "liveUrl": "https://weather-demo.com",
+      "githubUrl": "https://github.com/omj2002/weather-app",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Chat Application",
+      "description": "A real-time chat application with private messaging, group chats, file sharing, and emoji support.",
+      "image": "assets/images/projects/chat.jpg",
+      "technologies": ["React", "Socket.io", "Node.js", "MongoDB", "Material-UI"],
+      "liveUrl": "https://chat-demo.com",
+      "githubUrl": "https://github.com/omj2002/chat-app",
+      "featured": false
+    }
+  ],
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/omj2002",
+      "icon": "fab fa-github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/om-jadhav-245230239",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/omop14321432",
+      "icon": "fab fa-twitter"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://instagram.com/omj002",
+      "icon": "fab fa-instagram"
+    }
+  ],
+  "languages": [
+    {
+      "code": "EN",
+      "name": "English",
+      "flag": "fas fa-flag-usa"
+    },
+    {
+      "code": "ES",
+      "name": "Español",
+      "flag": "fas fa-flag"
+    },
+    {
+      "code": "FR",
+      "name": "Français",
+      "flag": "fas fa-flag"
+    }
+  ],
+  "navigation": [
+    {
+      "path": "/about",
+      "label": "About",
+      "icon": "fas fa-user"
+    },
+    {
+      "path": "/skills",
+      "label": "Skills",
+      "icon": "fas fa-cogs"
+    },
+    {
+      "path": "/projects",
+      "label": "Projects",
+      "icon": "fas fa-briefcase"
+    },
+    {
+      "path": "/showcase",
+      "label": "3D Showcase",
+      "icon": "fas fa-cube"
+    },
+    {
+      "path": "/contact",
+      "label": "Contact",
+      "icon": "fas fa-envelope"
+    }
+  ]
+}

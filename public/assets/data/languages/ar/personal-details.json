@@ -1,0 +1,99 @@
+{
+  "personalInfo": {
+    "name": "OM Jadhav",
+    "title": "مطور Full Stack",
+    "subtitle": "مطور شغوف & حل المشاكل",
+    "description": "أنا مطور شغوف بخبرة في تقنيات الويب الحديثة. أحب إنشاء تطبيقات جميلة ووظيفية وسهلة الاستخدام تحل مشاكل حقيقية.",
+    "email": "om.jadhav.dev@gmail.com",
+    "phone": "+916266836548",
+    "location": "Hyderabad, Telangana",
+    "profileImage": "assets/images/profilephoto,jpg",
+    "resumeUrl": "assets/files/OM_Jadhav_Resume.pdf"
+  },
+  "stats": [
+    {
+      "number": "1+",
+      "label": "سنوات من الخبرة"
+    },
+    {
+      "number": "20+",
+      "label": "مشاريع مكتملة"
+    },
+    {
+      "number": "5+",
+      "label": "عملاء راضون"
+    },
+    {
+      "number": "10+",
+      "label": "تقنيات متقنة"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "تطوير Full Stack",
+      "description": "خبير في تقنيات الويب الحديثة مع أكثر من سنة من الخبرة",
+      "icon": "fas fa-code",
+      "color": "#4CAF50"
+    },
+    {
+      "title": "حل المشاكل",
+      "description": "شغوف بإنشاء حلول فعالة وقابلة للتوسع",
+      "icon": "fas fa-lightbulb",
+      "color": "#FF9800"
+    },
+    {
+      "title": "متعلم مستمر",
+      "description": "دائماً أستكشف تقنيات جديدة وأفضل الممارسات",
+      "icon": "fas fa-graduation-cap",
+      "color": "#2196F3"
+    },
+    {
+      "title": "لاعب فريق",
+      "description": "نهج تعاوني مع مهارات تواصل ممتازة",
+      "icon": "fas fa-users",
+      "color": "#9C27B0"
+    }
+  ],
+  "bio": {
+    "short": "مطور Full Stack شغوف مع خبرة في تقنيات الويب الحديثة",
+    "long": "أنا مطور Full Stack شغوف مع أكثر من سنة من الخبرة في إنشاء تطبيقات ويب حديثة وقابلة للتوسع. أتخصص في Angular و .NET Core وتقنيات السحابة مع تركيز قوي على تجربة المستخدم وتحسين الأداء. أحب حل المشاكل المعقدة وتحويل الأفكار إلى واقع من خلال كود نظيف وفعال.",
+    "passions": [
+      "تطوير الويب",
+      "حل المشاكل",
+      "تعلم تقنيات جديدة",
+      "العمل الجماعي"
+    ],
+    "goals": [
+      "بناء تطبيقات ويب مبتكرة",
+      "المساهمة في مشاريع مفتوحة المصدر",
+      "إرشاد المطورين المبتدئين",
+      "البقاء محدثاً بأحدث التقنيات"
+    ]
+  },
+  "experience": [
+    {
+      "title": "مطور Full Stack",
+      "company": "مستقل",
+      "period": "2023 - الحاضر",
+      "description": "تطوير تطبيقات ويب شاملة باستخدام Angular و .NET Core وتقنيات السحابة الحديثة",
+      "technologies": ["Angular", ".NET Core", "SQL Server", "Azure"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology",
+      "field": "علوم الحاسوب",
+      "institution": "اسم الجامعة",
+      "year": "2023",
+      "description": "متخصص في تطوير البرمجيات وتقنيات الويب"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
+      "year": "2023",
+      "description": "أساسيات الحوسبة السحابية وخدمات Azure"
+    }
+  ]
+}

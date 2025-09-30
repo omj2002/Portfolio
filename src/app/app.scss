@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  padding-top: 50px; /* Account for fixed header */
+  background: var(--bg-primary);
+  min-height: 100vh;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  :host {
+    padding-top: 50px; /* Smaller header for mobile */
+  }
+}

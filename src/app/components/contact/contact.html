@@ -1,0 +1,204 @@
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Get In Touch</h2>
+      <p>Let's work together on your next project</p>
+    </div>
+    
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <ng-container *ngIf="personalInfo">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>{{ personalInfo.email }}</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>{{ personalInfo.phone }}</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>{{ personalInfo.location }}</p>
+            </div>
+          </div>
+        </ng-container>
+        
+        <div class="social-links">
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a *ngFor="let social of socialLinks" 
+               [href]="social.url" 
+               target="_blank" 
+               class="social-icon"
+               [attr.aria-label]="social.name">
+              <i [class]="social.icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h3>Send Message</h3>
+        
+        <!-- Success Message -->
+        <div *ngIf="submitSuccess" class="alert alert-success">
+          <i class="fas fa-check-circle"></i>
+          <span>Message sent successfully! I'll get back to you soon.</span>
+        </div>
+        
+        <!-- Error Message -->
+        <div *ngIf="submitError" class="alert alert-error">
+          <i class="fas fa-exclamation-circle"></i>
+          <span>{{ submitError }}</span>
+        </div>
+
+        <!-- Development Mode Warning -->
+        <div class="alert alert-warning" *ngIf="!emailService.isEmailConfigured()">
+          <i class="fas fa-exclamation-triangle"></i>
+          <div>
+            <strong>Development Mode:</strong> EmailJS not configured. 
+            <a href="QUICK_EMAIL_SETUP.md" target="_blank" class="setup-link">Set up email functionality</a>
+          </div>
+        </div>
+        
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <!-- Name Field -->
+          <div class="form-group" [class.has-error]="hasFieldError('name')" [class.has-success]="isFieldValid('name')">
+            <label for="name" class="form-label">
+              Your Name
+              <span class="required">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="name"
+              formControlName="name"
+              placeholder="Your Name"
+              (blur)="onFieldBlur('name')"
+              class="form-input"
+              [class.error]="hasFieldError('name')"
+              [class.success]="isFieldValid('name')">
+            <div class="form-icon">
+              <i class="fas fa-user" *ngIf="!hasFieldError('name') && !isFieldValid('name')"></i>
+              <i class="fas fa-exclamation-circle error-icon" *ngIf="hasFieldError('name')"></i>
+              <i class="fas fa-check-circle success-icon" *ngIf="isFieldValid('name')"></i>
+            </div>
+            <div class="error-message" *ngIf="hasFieldError('name')">
+              {{ getFieldError('name') }}
+            </div>
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-group" [class.has-error]="hasFieldError('email')" [class.has-success]="isFieldValid('email')">
+            <label for="email" class="form-label">
+              Your Email
+              <span class="required">*</span>
+            </label>
+            <input 
+              type="email" 
+              id="email"
+              formControlName="email"
+              placeholder="Your Email"
+              (blur)="onFieldBlur('email')"
+              class="form-input"
+              [class.error]="hasFieldError('email')"
+              [class.success]="isFieldValid('email')">
+            <div class="form-icon">
+              <i class="fas fa-envelope" *ngIf="!hasFieldError('email') && !isFieldValid('email')"></i>
+              <i class="fas fa-exclamation-circle error-icon" *ngIf="hasFieldError('email')"></i>
+              <i class="fas fa-check-circle success-icon" *ngIf="isFieldValid('email')"></i>
+            </div>
+            <div class="error-message" *ngIf="hasFieldError('email')">
+              {{ getFieldError('email') }}
+            </div>
+          </div>
+
+          <!-- Subject Field -->
+          <div class="form-group" [class.has-error]="hasFieldError('subject')" [class.has-success]="isFieldValid('subject')">
+            <label for="subject" class="form-label">
+              Subject
+              <span class="required">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="subject"
+              formControlName="subject"
+              placeholder="Subject"
+              (blur)="onFieldBlur('subject')"
+              class="form-input"
+              [class.error]="hasFieldError('subject')"
+              [class.success]="isFieldValid('subject')">
+            <div class="form-icon">
+              <i class="fas fa-tag" *ngIf="!hasFieldError('subject') && !isFieldValid('subject')"></i>
+              <i class="fas fa-exclamation-circle error-icon" *ngIf="hasFieldError('subject')"></i>
+              <i class="fas fa-check-circle success-icon" *ngIf="isFieldValid('subject')"></i>
+            </div>
+            <div class="error-message" *ngIf="hasFieldError('subject')">
+              {{ getFieldError('subject') }}
+            </div>
+          </div>
+
+          <!-- Message Field -->
+          <div class="form-group" [class.has-error]="hasFieldError('message')" [class.has-success]="isFieldValid('message')">
+            <label for="message" class="form-label">
+              Your Message
+              <span class="required">*</span>
+            </label>
+            <textarea 
+              id="message"
+              formControlName="message"
+              placeholder="Your Message"
+              (blur)="onFieldBlur('message')"
+              rows="5"
+              class="form-textarea"
+              [class.error]="hasFieldError('message')"
+              [class.success]="isFieldValid('message')"></textarea>
+            <div class="form-icon textarea-icon">
+              <i class="fas fa-comment" *ngIf="!hasFieldError('message') && !isFieldValid('message')"></i>
+              <i class="fas fa-exclamation-circle error-icon" *ngIf="hasFieldError('message')"></i>
+              <i class="fas fa-check-circle success-icon" *ngIf="isFieldValid('message')"></i>
+            </div>
+            <div class="error-message" *ngIf="hasFieldError('message')">
+              {{ getFieldError('message') }}
+            </div>
+            <div class="character-count">
+              {{ contactForm.get('message')?.value?.length || 0 }}/1000
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-actions">
+            <button 
+              type="submit" 
+              class="btn btn-primary"
+              [disabled]="contactForm.invalid || isSubmitting"
+              [class.loading]="isSubmitting">
+              <span *ngIf="!isSubmitting">Send Message</span>
+              <span *ngIf="isSubmitting">
+                <i class="fas fa-spinner fa-spin"></i>
+                Sending...
+              </span>
+            </button>
+            
+            <button 
+              type="button" 
+              class="btn btn-secondary"
+              (click)="resetForm()"
+              [disabled]="isSubmitting">
+              <i class="fas fa-undo"></i>
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
