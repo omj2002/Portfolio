@@ -1,0 +1,70 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce solution with React frontend and Node.js backend, featuring user authentication, payment integration, and admin dashboard.",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
+      "liveUrl": "https://ecommerce-demo.com",
+      "githubUrl": "https://github.com/omjadhav/ecommerce-platform",
+      "featured": true,
+      "image": "assets/images/projects/ecommerce.jpg",
+      "category": "Full Stack"
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "description": "A collaborative task management application built with Angular and Firebase, featuring real-time updates, team collaboration, and project tracking.",
+      "technologies": ["Angular", "Firebase", "TypeScript", "RxJS"],
+      "liveUrl": "https://taskmanager-demo.com",
+      "githubUrl": "https://github.com/omjadhav/task-manager",
+      "featured": true,
+      "image": "assets/images/projects/taskmanager.jpg",
+      "category": "Frontend"
+    },
+    {
+      "id": 3,
+      "title": "Weather Dashboard",
+      "description": "A responsive weather dashboard with real-time data, interactive maps, and 7-day forecasts using multiple weather APIs.",
+      "technologies": ["Vue.js", "Chart.js", "OpenWeather API", "CSS3"],
+      "liveUrl": "https://weather-dashboard.com",
+      "githubUrl": "https://github.com/omjadhav/weather-dashboard",
+      "featured": false,
+      "image": "assets/images/projects/weather.jpg",
+      "category": "Frontend"
+    },
+    {
+      "id": 4,
+      "title": "Chat Application",
+      "description": "A real-time chat application with Socket.io, featuring private messaging, group chats, file sharing, and message encryption.",
+      "technologies": ["Node.js", "Socket.io", "Express", "MongoDB", "JWT"],
+      "liveUrl": "https://chat-demo.com",
+      "githubUrl": "https://github.com/omjadhav/chat-app",
+      "featured": true,
+      "image": "assets/images/projects/chat.jpg",
+      "category": "Full Stack"
+    },
+    {
+      "id": 5,
+      "title": "Portfolio Website",
+      "description": "A modern, responsive portfolio website with 3D interactive elements, smooth animations, and dynamic content management.",
+      "technologies": ["Angular", "Three.js", "TypeScript", "SCSS"],
+      "liveUrl": "https://omjadhav.dev",
+      "githubUrl": "https://github.com/omjadhav/portfolio",
+      "featured": true,
+      "image": "assets/images/projects/portfolio.jpg",
+      "category": "Frontend"
+    },
+    {
+      "id": 6,
+      "title": "API Gateway",
+      "description": "A microservices API gateway with authentication, rate limiting, load balancing, and service discovery capabilities.",
+      "technologies": ["Node.js", "Express", "Redis", "Docker", "Nginx"],
+      "liveUrl": "https://api-gateway-demo.com",
+      "githubUrl": "https://github.com/omjadhav/api-gateway",
+      "featured": false,
+      "image": "assets/images/projects/api.jpg",
+      "category": "Backend"
+    }
+  ]
+}
