@@ -1,6 +1,6 @@
 {
   "personalInfo": {
-    "name": "John Doe",
+    "name": "Om Jadhav",
     "title": "Full Stack Developer",
     "subtitle": "Passionate Developer & Problem Solver",
     "description": "I'm a passionate developer with expertise in modern web technologies. I love creating beautiful, functional, and user-friendly applications that solve real-world problems.",
@@ -148,7 +148,7 @@
       "image": "assets/images/projects/ecommerce.jpg",
       "technologies": ["Angular", "Node.js", "MongoDB", "Stripe", "Express.js"],
       "liveUrl": "https://ecommerce-demo.com",
-      "githubUrl": "https://github.com/johndoe/ecommerce-platform",
+      "githubUrl": "https://github.com/omj2002/ecommerce-platform",
       "featured": true
     },
     {
@@ -158,7 +158,7 @@
       "image": "assets/images/projects/taskmanager.jpg",
       "technologies": ["React", "Socket.io", "Express", "PostgreSQL", "Redux"],
       "liveUrl": "https://taskmanager-demo.com",
-      "githubUrl": "https://github.com/johndoe/task-manager",
+      "githubUrl": "https://github.com/omj2002/task-manager",
       "featured": true
     },
     {
@@ -168,7 +168,7 @@
       "image": "assets/images/projects/analytics.jpg",
       "technologies": ["Vue.js", "D3.js", "Python", "Django", "Chart.js"],
       "liveUrl": "https://analytics-demo.com",
-      "githubUrl": "https://github.com/johndoe/analytics-dashboard",
+      "githubUrl": "https://github.com/omj2002/analytics-dashboard",
       "featured": true
     },
     {
@@ -188,7 +188,7 @@
       "image": "assets/images/projects/weather.jpg",
       "technologies": ["Angular", "OpenWeather API", "Leaflet", "SCSS"],
       "liveUrl": "https://weather-demo.com",
-      "githubUrl": "https://github.com/johndoe/weather-app",
+      "githubUrl": "https://github.com/omj2002/weather-app",
       "featured": false
     },
     {
@@ -198,29 +198,29 @@
       "image": "assets/images/projects/chat.jpg",
       "technologies": ["React", "Socket.io", "Node.js", "MongoDB", "Material-UI"],
       "liveUrl": "https://chat-demo.com",
-      "githubUrl": "https://github.com/johndoe/chat-app",
+      "githubUrl": "https://github.com/omj2002/chat-app",
       "featured": false
     }
   ],
   "socialLinks": [
     {
       "name": "GitHub",
-      "url": "https://github.com/johndoe",
+      "url": "https://github.com/omj2002",
       "icon": "fab fa-github"
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/johndoe",
+      "url": "https://linkedin.com/in/om-jadhav-245230239",
       "icon": "fab fa-linkedin"
     },
     {
       "name": "Twitter",
-      "url": "https://twitter.com/johndoe",
+      "url": "https://twitter.com/omop14321432",
       "icon": "fab fa-twitter"
     },
     {
       "name": "Instagram",
-      "url": "https://instagram.com/johndoe",
+      "url": "https://instagram.com/omj002",
       "icon": "fab fa-instagram"
     }
   ],

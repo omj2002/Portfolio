@@ -124,18 +124,18 @@ export class DataService {
   private loadFallbackData(): void {
     const fallbackData: PortfolioData = {
       personalInfo: {
-        name: "John Doe",
+        name: "Om Jadhav",
         title: "Full Stack Developer",
         subtitle: "Passionate Developer & Problem Solver",
         description: "I'm a passionate developer with expertise in modern web technologies. I love creating beautiful, functional, and user-friendly applications that solve real-world problems.",
-        email: "john.doe@example.com",
+        email: "om.jadhav.dev@gmail.com",
         phone: "+1 (555) 123-4567",
-        location: "New York, NY",
-        profileImage: "assets/images/profile.jpg",
-        resumeUrl: "assets/files/John_Doe_Resume.pdf"
+        location: "Hyderabad, Telangana",
+        profileImage: "assets/images/profilephoto.jpg",
+        resumeUrl: "assets/Resume/Om-jadav-Resume.pdf"
       },
       stats: [
-        { number: "3+", label: "Years Experience" },
+        { number: "1+", label: "Years Experience" },
         { number: "20+", label: "Projects Completed" },
         { number: "15+", label: "Happy Clients" }
       ],
@@ -196,10 +196,10 @@ export class DataService {
         }
       ],
       socialLinks: [
-        { name: "GitHub", url: "https://github.com/johndoe", icon: "fab fa-github" },
-        { name: "LinkedIn", url: "https://linkedin.com/in/johndoe", icon: "fab fa-linkedin" },
-        { name: "Twitter", url: "https://twitter.com/johndoe", icon: "fab fa-twitter" },
-        { name: "Instagram", url: "https://instagram.com/johndoe", icon: "fab fa-instagram" }
+        { name: "GitHub", url: "https://github.com/omj2002", icon: "fab fa-github" },
+        { name: "LinkedIn", url: "https://linkedin.com/in/om-jadhav-245230239", icon: "fab fa-linkedin" },
+        { name: "Twitter", url: "https://twitter.com/Omop14321432", icon: "fab fa-twitter" },
+        { name: "Instagram", url: "https://instagram.com/omj002", icon: "fab fa-instagram" }
       ],
       languages: [
         { code: "EN", name: "English", flag: "fas fa-flag-usa" },
